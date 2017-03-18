@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "main": "lib/main",
+  "repository": "https://github.com/alexpriceco/apco-black-ui",
   "engines": {
     "atom": ">0.40.0"
   },
