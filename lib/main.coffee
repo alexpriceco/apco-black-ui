@@ -27,8 +27,8 @@ unsetFontSize = ->
   root.style.fontSize = ''
 
 # Layout Mode -----------------------
-setLayoutMode = (layoutMode) ->
-  root.setAttribute('theme-one-dark-ui-layoutmode', layoutMode.toLowerCase())
+# setLayoutMode = (layoutMode) ->
+  # root.setAttribute('theme-one-dark-ui-layoutmode', layoutMode.toLowerCase())
 
 unsetLayoutMode = ->
   root.removeAttribute('theme-one-dark-ui-layoutmode')
