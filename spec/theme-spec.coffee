@@ -1,25 +1,25 @@
-describe "One Dark UI theme", ->
+describe "APCO Black UI theme", ->
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage('one-dark-ui')
+      atom.packages.activatePackage('apco-black-ui')
 
   it "allows the font size to be set via config", ->
     expect(document.documentElement.style.fontSize).toBe ''
 
-    atom.config.set('one-dark-ui.fontSize', '10')
+    atom.config.set('apco-black-ui.fontSize', '10')
     expect(document.documentElement.style.fontSize).toBe '10px'
 
-    atom.config.set('one-dark-ui.fontSize', 'Auto')
+    atom.config.set('apco-black-ui.fontSize', 'Auto')
     expect(document.documentElement.style.fontSize).toBe ''
 
   it "allows the tab sizing to be set via config", ->
-    atom.config.set('one-dark-ui.tabSizing', 'Maximum')
-    expect(document.documentElement.getAttribute('theme-one-dark-ui-tabsizing')).toBe 'maximum'
+    atom.config.set('apco-black-ui.tabSizing', 'Maximum')
+    expect(document.documentElement.getAttribute('theme-apco-black-ui-tabsizing')).toBe 'maximum'
 
   it "allows the tab sizing to be set via config", ->
-    atom.config.set('one-dark-ui.tabSizing', 'Minimum')
-    expect(document.documentElement.getAttribute('theme-one-dark-ui-tabsizing')).toBe 'minimum'
+    atom.config.set('apco-black-ui.tabSizing', 'Minimum')
+    expect(document.documentElement.getAttribute('theme-apco-black-ui-tabsizing')).toBe 'minimum'
 
   it "allows the dock toggle buttons to be hidden via config", ->
-    atom.config.set('one-dark-ui.hideDockButtons', true)
-    expect(document.documentElement.getAttribute('theme-one-dark-ui-dock-buttons')).toBe 'hidden'
+    atom.config.set('apco-black-ui.hideDockButtons', true)
+    expect(document.documentElement.getAttribute('theme-apco-black-ui-dock-buttons')).toBe 'hidden'
