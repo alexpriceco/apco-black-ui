@@ -37,7 +37,8 @@ unsetFontSize = ->
 # Tab Sizing -----------------------
 
 setTabSizing = (tabSizing) ->
-  root.setAttribute('theme-apco-black-ui-tabsizing', tabSizing.toLowerCase())
+  if tabSizing
+    root.setAttribute('theme-apco-black-ui-tabsizing', tabSizing.toLowerCase())
 
 unsetTabSizing = ->
   root.removeAttribute('theme-apco-black-ui-tabsizing')
